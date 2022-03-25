@@ -1,0 +1,18 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+         std::set<int> a;
+        for(int num : nums)
+        {
+            if(a.find(num) != a.end())
+            {
+               return true;  
+            }
+        
+        a.insert(num);
+    }
+      return false;  
+  }   
+};
+
+
